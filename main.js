@@ -32,6 +32,9 @@ delete User.email
 console.log(User.email)
 console.log(User.addres)
 console.log(User.addres.city.street)
+console.log(User.skills)
+
+
 
 
 
