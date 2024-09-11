@@ -80,9 +80,8 @@ characters = [
   console.log(names);
 
   //2-Get first gender that is his mass is over 50//
-  let mass = characters.filter(e => e.mass> 50);
-  let massGender = eye.map(e => e.gender);
-  console.log(massGender);
+  let mass = characters.find((e )=> e.mass>50).gender;
+  console.log(mass);
 
   //3-Get characters with height less than 200
   let heights = characters.filter(e => e.height< 200);
@@ -98,7 +97,6 @@ characters = [
   let allHeights = characters.map(character => character.height);
   console.log(allHeights);
   //7-Sort by mass (low to high)
-
   let sorting =characters.sort((a, b) => a.mass - b.mass);
 console.log(sorting)
 
